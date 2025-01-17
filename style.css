@@ -11,6 +11,7 @@
     display:flex;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .nav-logo{
@@ -116,6 +117,7 @@ span{
     color: white;
     align-items: center;
     justify-content: space-evenly;
+    flex-wrap: wrap;
 }
 
 .panel-opt p{
@@ -158,11 +160,15 @@ span{
     color: #007185;
 }
 
-.shop{
-    display: flex;
-    flex-wrap: wrap;
+.shop {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    padding: 20px;
     justify-content: space-evenly;
     background-color: #e2e7e6;
+}
+
 }
 
 .box{
@@ -191,6 +197,7 @@ span{
 
 footer{
     margin-top:15px;
+  
 }
 
 .foot-panel1{
@@ -207,8 +214,12 @@ footer{
     background-color:#222f3d;
     color: white;
     height: 300px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
     justify-content: space-evenly;
+}
+
 }
 
 ul{
