@@ -1,4 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
+    loadCartFromStorage();
     const shopSection = document.querySelector(".shop");
 
     // Function to fetch all products
@@ -36,6 +37,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     fetchProducts();
 });
+
+let cart = [];
+
+function saveCartToStorage() {
+  localStorage.setItem("cart", JSON.stringify(cart));
+}
+
+function loadCartFromStorage() {
+  const storedCart = localStorage.getItem("cart");
+  cart = storedCart ? JSON.parse(storedCart) : [];
+  updateCartCount();
+}
+
+function updateCartCount() {
+  const cartIcon = document.getElementById("cart-count");
+  if (cartIcon) cartIcon.innerText = cart.length;
+}
+
 let cart = [];
 
 function addToCart(product) {
