@@ -64,3 +64,26 @@ function createProductHTML(product) {
     </div>
   `;
 }
+function selectPayment() {
+  if (cart.length === 0) {
+    alert("Cart is empty! Add something first.");
+    return;
+  }
+
+  const method = prompt("Select Payment Method:\n1. UPI\n2. Credit Card\n3. Cash on Delivery");
+  
+  switch(method) {
+    case "1":
+      alert("You selected UPI. Proceeding to payment...");
+      break;
+    case "2":
+      alert("You selected Credit Card. Proceeding to payment...");
+      break;
+    case "3":
+      alert("Cash on Delivery selected. Order will be placed.");
+      break;
+    default:
+      alert("Invalid payment method.");
+  }
+}
+
