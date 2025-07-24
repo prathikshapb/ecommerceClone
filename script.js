@@ -47,3 +47,10 @@ document.querySelector('.nav-cart').addEventListener('click', (e) => {
 function closeCart() {
   document.getElementById('cart-section').style.display = 'none';
 }
+fetch("/api/products")
+  .then(response => response.json())
+  .then(data => {
+    console.log(data);
+    // render product list
+  });
+
