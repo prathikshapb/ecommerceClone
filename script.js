@@ -1,27 +1,3 @@
-// Event listener for the registration form submission
-document.getElementById('registerForm').addEventListener('submit', function(e) {
-    const password = document.getElementById('password').value;
-    const confirmPassword = document.getElementById('confirmPassword').value;
-
-    if (password !== confirmPassword) {
-        e.preventDefault();
-        alert('Passwords do not match');
-    }
-});
-
-// Event listener for the login form submission
-document.getElementById('loginForm').addEventListener('submit', function(e) {
-    // You can add any additional validation here if needed
-    const email = document.getElementById('email').value;
-    const password = document.getElementById('password').value;
-
-    // Example: Simple validation
-    if (!email || !password) {
-        e.preventDefault();
-        alert('Please fill in all fields');
-    }
-});
-
 // Event listener for the cart icon click
 document.querySelector('.nav-cart').addEventListener('click', (e) => {
     e.preventDefault(); // Prevent default action
