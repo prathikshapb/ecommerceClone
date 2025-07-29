@@ -289,6 +289,22 @@
 .cart-item {
   margin-bottom: 10px;
 }
+.shop-now-btn {
+  margin-left: 10px;
+  padding: 6px 12px;
+  background-color: #f0c14b;
+  border: 1px solid #a88734;
+  border-radius: 4px;
+  color: #111;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.shop-now-btn:hover {
+  background-color: #ddb347;
+}
+
 
 
   
