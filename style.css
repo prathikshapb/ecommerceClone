@@ -155,7 +155,7 @@
       background-image:url("hero_image.jpg");
       background-image:url("Hero2.jpg");
       background-size: cover;
-      height: 450 px;
+      height: 350 px;
       display: flex;
       justify-content: center;
       align-items: flex-end;
