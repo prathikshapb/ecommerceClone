@@ -162,13 +162,14 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  /*object-fit: cover;*/
+  object-fit: contain;           /* Show entire image */
+  object-position: center;       /* Center it */
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
 
 .hero-image.active {
-  object-position: top;
   opacity: 1;
   z-index: 1;
 }
