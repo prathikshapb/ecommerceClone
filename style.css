@@ -170,6 +170,7 @@
 }
 
 .hero-image.active {
+  object-position: top;
   opacity: 1;
   z-index: 1;
 }
