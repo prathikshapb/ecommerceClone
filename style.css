@@ -26,15 +26,21 @@
       background-size: cover;
       height: 50px;
       width: 100px;
+      border: 1.5px solid transparent;
+      transition: border 0.3s;
   }
-  
-  .border{
+
+  .logo:hover {
+  border: 1.5px solid white;
+}
+
+ /* .border{
       border: 1.5px solid transparent;
   }
 
   .border:hover{
       border: 1.5px solid white;
-  }
+  } */
 
   .logo{
       background-color: blac;
