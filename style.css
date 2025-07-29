@@ -150,30 +150,13 @@
       font-size:0.9rem;
       font-weight: 700;
   }
-  
-  .hero{
-    
-      background-size: cover;
-      height: 350 px;
-      display: flex;
-      justify-content: center;
-      align-items: flex-end;
-      position: relative;
-      width: 100%;
-      overflow: hidden;
-  }
-  
-  .hero-msg{
-      background-color: white;
-      color: black;
-      height: 40px;
-      display:flex;
-      align-items: center;
-      justify-content: center;
-      font-size: 0.85rem;
-      width: 80%;
-      margin-bottom: 25px;
-  }
+
+.hero {
+  position: relative;
+  height: 400px; /* Adjust based on image size */
+  overflow: hidden;
+  z-index: 1;
+}
 
 .hero-image {
   position: absolute;
@@ -187,6 +170,28 @@
 .hero-image.active {
   opacity: 1;
   z-index: 1;
+}
+
+.hero-msg {
+  position: absolute;
+  bottom: 20px;
+  left: 10%;
+  background-color: white;
+  color: black;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  width: 80%;
+  z-index: 2;
+}
+
+/* This is the key fix for pushing the boxes down */
+.box-section {
+  position: relative;
+  z-index: 0;
+  margin-top: 400px; /* Same as hero height */
 }
   
   .shop{
