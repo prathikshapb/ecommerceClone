@@ -9,6 +9,18 @@ document.querySelector('.nav-cart').addEventListener('click', (e) => {
     }
 });
 
+  let currentSlide = 0;
+  const images = document.querySelectorAll('.hero-image');
+
+  function showNextImage() {
+    images[currentSlide].classList.remove('active');
+    currentSlide = (currentSlide + 1) % images.length;
+    images[currentSlide].classList.add('active');
+  }
+
+  setInterval(showNextImage, 4000);
+
+
 // Function to fetch and display cart items
 function openCart() {
     const userId = 1; // Change this based on actual logged-in user if needed
