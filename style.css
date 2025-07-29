@@ -164,7 +164,7 @@
   height: 100%;
   object-fit: cover;
   /*object-fit: contain; */
-  object-position: center;
+  object-position: top;
   opacity: 0;
   transition: opacity 1s ease-in-out;
 }
