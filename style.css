@@ -176,7 +176,6 @@
   }
 
 .hero-image {
-  background-image:url("Hero2.jpg");
   position: absolute;
   width: 100%;
   height: 100%;
@@ -186,11 +185,9 @@
 }
 
 .hero-image.active {
-  background-image:url("hero_image.jpg");  
   opacity: 1;
   z-index: 1;
 }
-
   
   .shop{
       display: flex;
